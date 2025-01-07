@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .registration-form {
+            border: 1px solid #e71818;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #e7b849;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+        td {
+            padding: 10px;
+        }
+        .submit-buttons {
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2 style="text-align: center;">Registration Form</h2>
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <select name="day" required>
+                            <option value="">Day</option>
+                            <script>
+                                for (let i = 1; i <= 31; i++) {
+                                    document.write(`<option value="${i}">${i}</option>`);
+                                }
+                            </script>
+                        </select>
+                        <select name="month" required>
+                            <option value="">Month</option>
+                            <script>
+                                const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                months.forEach((m, i) => document.write(`<option value="${i + 1}">${m}</option>`));
+                            </script>
+                        </select>
+                        <select name="year" required>
+                            <option value="">Year</option>
+                            <script>
+                                for (let y = 1980; y <= new Date().getFullYear(); y++) {
+                                    document.write(`<option value="${y}">${y}</option>`);
+                                }
+                            </script>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="tel" name="mobile" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" required> Male
+                        <input type="radio" name="gender" value="Female" required> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address" rows="4" maxlength="150"></textarea></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td>Pin Code:</td>
+                    <td><input type="number" name="pin_code" pattern="[0-9]{6}" required></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" name="state" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="hobbies" value="Drawing"> Drawing
+                        <input type="checkbox" name="hobbies" value="Singing"> Singing
+                        <input type="checkbox" name="hobbies" value="Dancing"> Dancing
+                        <input type="checkbox" name="hobbies" value="Sketching"> Sketching
+                        <input type="checkbox" name="hobbies" value="Others"> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <table border="1" cellspacing="0">
+                            <tr>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                            <tr>
+                                <td>Class X</td>
+                                <td><input type="text" name="class_x_board" required></td>
+                                <td><input type="number" name="class_x_percent" step="0.01" required></td>
+                                <td><input type="number" name="class_x_year" required></td>
+                            </tr>
+                            <tr>
+                                <td>Class XII</td>
+                                <td><input type="text" name="class_xii_board" required></td>
+                                <td><input type="number" name="class_xii_percent" step="0.01" required></td>
+                                <td><input type="number" name="class_xii_year" required></td>
+                            </tr>
+                            <tr>
+                                <td>Graduation</td>
+                                <td><input type="text" name="grad_board" required></td>
+                                <td><input type="number" name="grad_percent" step="0.01" required></td>
+                                <td><input type="number" name="grad_year" required></td>
+                            </tr>
+                            <tr>
+                                <td>Masters</td>
+                                <td><input type="text" name="masters_board"></td>
+                                <td><input type="number" name="masters_percent" step="0.01"></td>
+                                <td><input type="number" name="masters_year"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Applied For:</td>
+                    <td>
+                        <input type="radio" name="course" value="BCA" required> BCA
+                        <input type="radio" name="course" value="B.Com" required> B.Com
+                        <input type="radio" name="course" value="B.Sc" required> B.Sc
+                        <input type="radio" name="course" value="B.A" required> B.A
+                    </td>
+                </tr>
+                <tr class="submit-buttons">
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
