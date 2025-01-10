@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* width: 100%; */
+        }
+        .parent {
+            background-color: cyan;
+            /* padding: 10px; */
+            text-align: left;
+            font-weight: bold;
+            width: 100%;
+            height: 100%;
+        }
+
+        .child1 {
+            background-color: yellow;
+            color: black;
+            /* padding: 20px; */
+            float: left;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .child2 {
+            border-color: yellow;
+            background-color: magenta;
+            color: black;
+            margin-left: 5px;
+            margin-top: 183px;
+            padding: 20px;
+            float: left;
+            /* size: 500%; */
+            width:30cm;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        This is the parent division!
+        <div class="child1">
+            This is a child division!
+            <div class="child2">
+                This is another child division!
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

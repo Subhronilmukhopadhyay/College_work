@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Layout with Positioning</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .yellow-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            background-color: yellow;
+            border: 10px solid red;
+            box-sizing: border-box;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .cyan-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: cyan;
+        }
+
+        .magenta-box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70%;
+            height: 50%;
+            background-color: magenta;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .text {
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+        }
+        .textparent {
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="textparent">This is a parent division!</span>
+        <div class="yellow-box">
+            <span class="text">This is a child division!</span>
+        </div>
+        <div class="cyan-box"></div>
+        <div class="magenta-box">
+            <span class="text">This is another child division!</span>
+        </div>
+    </div>
+</body>
+</html>
