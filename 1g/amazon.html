@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Bestsellers</title>
+    <link rel="stylesheet" href="amazon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+    <img src="amazon.png" alt="Amazon Logo">
+    <div class="account">
+        <p>Delivering to vellore 632007</p>
+        <strong>Update location</strong>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search Amazon.in">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <select>
+        <option>EN</option>
+        <option>HI</option>
+    </select>
+    <a style="color: inherit; text-decoration: none;" href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Felectronics%2Fb%2F%3Fie%3DUTF8%26node%3D976419031%26ref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+        <div class="account">
+            <p>Hello, sign in</p>
+            <strong>Account & Lists</strong>
+        </div>
+    </a>
+</header>
+
+<nav>
+    <a href="https://www.amazon.in/ref=nav_logo">All</a>
+    <a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">Electronics</a>
+    <a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Best Sellers</a>
+    <a href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobiles</a>
+    <a href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Today's Deals</a>
+</nav>
+<h1 class="Bestsellers">Amazon Bestsellers</h1>
+<div class="main-content">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Any Department</h3>
+        <ul>
+            <li><a href="https://www.amazon.in/gp/bestsellers/books/ref=zg_bs_nav_books_0">Books</a></li>
+            <li><a href="https://www.amazon.in/gp/bestsellers/electronics/1458204031/ref=zg_bs_nav_electronics_1">Computers & Accessories</a></li>
+            <li><a href="https://www.amazon.in/gp/bestsellers/electronics/ref=zg_bs_nav_electronics_0">Electronics</a></li>
+        </ul>
+    </div>
+
+    <!-- Bestseller Section -->
+    <div class="bestseller-section">
+        <h1>Bestsellers in Electronics</h1>
+
+        <div class="bestseller-grid">
+            <!-- Bestseller Item 1 -->
+            <div class="bestseller-item">
+                <img src="realme.jpg" alt="Product 1">
+                <a style="color: inherit; text-decoration: none;" href="https://www.amazon.in/realme-Storage-Display-Dimensity-Charger/dp/B0CZS3B3PY/ref=sr_1_1?crid=26V34PR3PT7N&dib=eyJ2IjoiMSJ9._BxWmMA_sY-YjQoEzFE9dADX1WF4CMeoX_Xyyp2oakIAQPYHUL12Ick9IOfmapGWVaTsrzEH7BbUMzJlgdRZLy1lvOdwK3Xa8x2Kn4fy9LNQ6CBZ7IxJlxbFK20j44jB8ZnmlP7HVUhR5yXnmym2uMihiwJBOLLVXtqqe5PwSDyo1kItrdGMtJOibvuITGx1DYMklk5Dsm8JuMWvrUDgbuT6IRM0FPOCFEUZnG9OTvU.IdahTYsvBPnIoT2xie6bToEm6pvrXroEcGPOqn8Wmns&dib_tag=se&keywords=Realme+Narzo+70x+5G+%286GB+RAM%2C+128GB+Storage%29&nsdOptOutParam=true&qid=1736610863&sprefix=realme+narzo+70x+5g+6gb+ram%2C+128gb+storage+%2Caps%2C273&sr=8-1">
+                    <h3 style="color: rgb(11, 114, 209); font-weight: lighter;">realme NARZO 70x 5G (Ice Blue, 6GB RAM,128GB Storage)|120Hz Ultra Smooth Display|Dimensity 6100+ 6nm 5G|50MP AI Camera|45W Charger in The Box</h3>
+                </a>
+                <p>6GB RAM, 128GB Storage</p>
+                <div class="price">₹10,749.00</div>
+            </div>
+
+            <!-- Bestseller Item 2 -->
+            <div class="bestseller-item">
+                <img src="boat.png" alt="Product 2"><br><br>
+                <a style="color: inherit; text-decoration: none;" href="https://www.amazon.in/boAt-Rockerz-255-Pro-Earphones/dp/B08TV2P1N8/ref=sr_1_3?crid=EEATROXVDI9A&dib=eyJ2IjoiMSJ9.1IBq_3Gr6qEvuB9TkpEkco44p9BjpiD3Q7cs4i9Qr2MBx6Mv6K0yQnE9NeAgTb9_ElPZWzIhuOQgtvoopmMtjAR3TPRm5ZzxrwXljBt6HyvoofgzI6GRtPH2t2EuacHZQNDMkjVKUP1DiJiqhoitj-jUk_q5tfhHkBWQ9i_wqJitxgnRC2iLWAijorURjuPG7Fik3Y0rrzOkiM-KM5M3pusSCxeTxKyUZS677OyVDmU.FYbln4odvCSsXJiyuBzvs9GMEBHjz0J3KoUaMxAcvZE&dib_tag=se&keywords=BoAt+Rockerz+255+Pro%2B+%2860HRS%2C+Fast+Charge%29&nsdOptOutParam=true&qid=1736611215&sprefix=boat+rockerz+255+pro%2B+60hrs%2C+fast+charge+%2Caps%2C298&sr=8-3">
+                    <h3 style="color: rgb(11, 114, 209); font-weight: lighter;">boAt Rockerz 255 Pro+, 60HRS Battery, Fast Charge, IPX7, Dual Pairing, Low Latency, Magnetic Earbuds, Bluetooth Neckband, Wireless with Mic Earphones (Active Black)</h3>
+                </a>
+                <p>60HRS Battery, IPX7</p>
+                <div class="price">₹999.00</div>
+            </div>
+
+            <!-- Bestseller Item 3 -->
+            <div class="bestseller-item">
+                <img src="apple.png" alt="Product 3">
+                <a style="color: inherit; text-decoration: none;" href="https://www.amazon.in/20W-USB-C-Adapter-iPhone-AirPods/dp/B0DJLY64TZ?crid=2L4SATBKGNSGP&dib=eyJ2IjoiMSJ9.C6NobUPSlvKbOPO8YX0YrS5VpKEGVau7c61eiOtue2um9MpbF_XH157y6sXnC5sg7OLu3xO_yP-_V40HEZA62Ps5Q6xcYS-moxG2NijxBiQIrqUIzHIrldv_gtgFaIRkrvZ4WVqNPd9lWNxvEMwE0DJzXY8rEVyX2BPlT4S2PDgvEwGT1nrKNde0N7WhWYav0ZOD2URH03Vl5GSO980TJq3983Qo8xbgpKKI5EeEuS4.3d_Sjb25t_NWYr18ux4ufKm1cERHDLzGoNa3LcUr8lU&dib_tag=se&keywords=Apple+20W+USB-C+Power+Adapter&qid=1736930349&sprefix=apple+20w+usb-c+power+adapter%2Caps%2C196&sr=8-4">
+                    <h3 style="color: rgb(11, 114, 209); font-weight: lighter;">20W USB-C Power Adapter for (iPhone, iPad & AirPods)</h3>
+                </a>
+                <p>For iPhone, iPad & AirPods</p>
+                <div class="price">₹1,549.00</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
